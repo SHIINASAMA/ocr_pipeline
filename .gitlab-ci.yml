@@ -5,7 +5,8 @@ build:
   script:
     - python -m venv venv
     - ./venv/Scripts/Activate.ps1
-    - pip install -r requirements.txt
+    # - pip install -r requirements.txt
+    - python setup_via_mirror.py
     # - python build.py --all --pyinstaller --onefile
     - python build.py --all --nuitka --onefile
   rules:
