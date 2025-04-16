@@ -6,8 +6,8 @@ build:
     - python -m venv venv
     - ./venv/Scripts/Activate.ps1
     - pip install -r requirements.txt
-    - python build.py --all --pyinstaller --onefile
-    # - python build.py --all --nuitka --onefile
+    # - python build.py --all --pyinstaller --onefile
+    - python build.py --all --nuitka --onefile
   rules:
     - changes:
         - app/**
